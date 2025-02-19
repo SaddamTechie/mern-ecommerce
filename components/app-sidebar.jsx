@@ -63,7 +63,7 @@ export function AppSidebar() {
             <SidebarMenu>
               {items.map((item) => (
                 <SidebarMenuItem key={item.title}>
-                  <SidebarMenuButton asChild>
+                  <SidebarMenuButton  asChild>
                     <a href={item.url}>
                       <item.icon />
                       <AppPopOver text={item.title} category={item.title} subcategories={item.subcategories}/>

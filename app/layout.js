@@ -1,3 +1,4 @@
+import { Toaster } from "@/components/ui/toaster"
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar"
@@ -31,6 +32,7 @@ export default function RootLayout({ children }) {
         {children}
         </main>
     </SidebarProvider>
+    <Toaster/>
       </body>
     </html>
   );
